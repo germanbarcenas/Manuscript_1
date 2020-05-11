@@ -1,0 +1,79 @@
+\documentclass[journal=jacsat,manuscript=article]{achemso}
+\usepackage{paper_style}
+
+%\usepackage{lipsum}  %% Package to create dummy text (comment or erase before start)
+
+%% ===============================================
+%% Setting the line spacing (3 options: only pick one)
+\doublespacing
+% \singlespacing
+%\onehalfspacing
+%% ===============================================
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SET THE TITLE
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% TITLE:
+\title{
+Phase Transformation and Kinetics\\
+\large
+MSE 618
+\large
+Term Paper
+}
+
+% AUTHORS:
+\author{German Barcenas}
+\affiliation{Boise State University}
+% DATE:
+\date{\today}
+\email{germanbarcenas@u.boisestate.edu}
+
+
+\begin{document}
+
+\maketitle
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BODY OF THE DOCUMENT
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% --------------------
+\section{Introduction}
+% --------------------
+Employing DNA self-assembly methods has been shown to enable the manipulation and mediation of chromophore dyes and give rise to Frenkel exciton delocalization among dimer systems\cite{Cannon2018LargeAggregates}.  The study of monomers can lend insight into suitable candidates for more highly tuned dimer systems. Squaraine dyes in particular have been reported to have spectral properties that make them a strong candidate to be used in conjunction with DNA nanotechnology\cite{Markova2013ComparisonLabels}⁠. This application of squaraines in particular offers an opportunity to implement multichromophoric systems. By utilizing DNA as a scaffold for squaraiane aggregation, dipole-dipole coupling occurs resulting in the splitting of the absorption spectra relative to a monomer. This splitting  is known as Davydov splitting\cite{Zhong2019DavydovDimers}. It it important to begin the study of a dye monomer to establish a baseline of understanding to multicomponent systems.  Examples of other fields in which squaraines are being applied include organic photovoltaics\citep{Wei2012FunctionalizedPhotovoltaics, Chen2018DensityCell}, near infrared medical imaging\cite{Strassel2018SquaraineNm}⁠, and molecular photoswitches\citep{Kellis2019AnPhases, Scholes2011LessonsHarvesting} .
+
+Squaraine dyes are composed of a squaric acid center. This central feature is a made from a electron-deficient  aromatic group. This group is then combined with accepting of electron-rich groups, often in a symmetric manner by means of a methine bridge \cite{Ilina2020SquaraineChallenges}⁠. In this study, the electron-rich groups is a trimethylindolenine with varied substitutes.
+
+Previous work\cite{Bassal2017ExploringADC2}⁠ highlights the history of computational studies of squaraine dye studies. This work presents a smaller variation in squaraine dyes by maintaining the basic chemistry and only altering functional groups. Squaraine dyes, unlike similar NIR cyanine dyes, are not symmetric and so from the monomer perspective have a potential for conformers to influence bulk spectral properties\cite{Kolosova2018MolecularSquaraines}⁠. Highlighting squaraine conformer properties has recently become of interest due to the conformations potential to alter the final photophysical properties in squaraine applications\cite{Paterno2018ExcitedScenario}⁠.  Conformers investigated in the paper are : trans,anti; cis,syn; and trans,anti.
+
+This work investigates the ground state and excited state molecular structure of three conformations: trans,syn; cis,syn, and trans,anti for SQ1—SQ(i)-H2,SQ4--SQ(i)-Cl2 ,SQ8--SQ(i)-Cl1 and SQ14--SQ(i)-(CH3)2 using density functional theory as well as their ground state, excited state, and transition dipole moment. These squaraines are also known as SQ1, SQ4, SQ8, and SQ14. Finally, this paper will compare the absorption spectra of SQ1 and SQ4 to experimental measurements. This work presents a study of SQ1, SQ4, SQ8, and SQ14, respectively, in which substitutes are changed according to their name . Investigations into the ground state and excited state electronic structures of these chromophores will enable a comparison of different substituents and their effects on electronic transition states necessary for the optimization of multichromophoric systems. Cyanine dyes have also been known to exhibit similar behavior and offer another opportunity for comparison\cite{Fothergill2018AbDyes}.
+
+
+% --------------------
+\section{Methodology}
+% --------------------
+Gaussian 09 software package [14]⁠ was used in density functional density calculations. Molecules were built and initially relaxed using the molecular editing software Avogadro [15]⁠ using the UFF [16]⁠ method. All calculations were performed using the 6-31G+(d,p) basis set with the M06-2X [17]⁠ correlation functional as previous works have shown a strong agreement with experimental results when compared with physical systems [14] . These structures were optimized using a tight root mean square residual force of $1x〖10〗^(-5)$  Hartree⁄Bohrand an ultra fine integration grid of $99$ radial shells and $590$ angular points per shell. The use of tight root mean squared and ultra fine integration grid is recommended for optimizing larger molecules with soft frequency modes such as methyl groups [19]⁠ . Ground state optimization of these molecules were verified to be optimized by via ground state frequency checks to ensure no imaginary frequencies were present. The optimized ground state structures were then used as the input geometry for excited state optimization calculations. Finally the calculated excited state geometry was used to calculate the excited state frequency to ensure an optimized structure was achieved.  The ground state and excited state frequencies were then used to produce an absorption spectrum for each molecule and conformer. These spectra were generated using the general Frank-Condon Hertzberg-Teller (FCHT) method. This methods allows for the capture of any weak vibroniclly allowed transitions [20]⁠.
+
+Conformation of squaraine dyes are referred here as trans,syn; cis,syn and trans,anti. In the study of monomers, it has been reported that there is a potential for coexistence of conformers in solution [21]⁠.
+
+\section{Conclusion}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% REFERENCES SECTION
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\bibliography{references.bib} 
+
+% ==========================
+% ==========================
+% ==========================
+
+
+\end{document}
